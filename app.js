@@ -4,7 +4,7 @@ const mysql = require('./mysql');
 
 app.get('/ver-dados', async (req, res) => {
     try {
-        const result = await mysql.execute('SELECT * FROM dados');
+        const result = await mysql.execute(`SELECT * FROM dados`);
         return res.status(200).json(result);
     } catch (error) {
         return res.status(500).json({

@@ -13,10 +13,10 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "./scripts/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx nodemon server.js"
+    "start": "npx nodemon ./scripts/server.js"
   },
   "dependencies": {
     "dotenv": "^17.3.1",
